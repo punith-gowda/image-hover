@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.container .clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.container .clip .content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 70%;
+    padding: 20px;
+    background: transparent;
+    opacity: 0;
+    transition: 0.5s;
+    color: whitesmoke;
+}
+
+.container .clip:hover .content {
+    opacity: 1;
+    bottom: 0;
+}
+
+
+.container .clip.clip1 {
+    background-image: url(/atlas-kadrow-4m93a-sZsDs-unsplash.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 50% 0, 20% 100%, 0% 100%);
+}
+
+.container .clip.clip2 {
+    background-image: url(/marc-zimmer-9SXgv3ydbs4-unsplash.jpg);
+    background-size: cover;
+    clip-path: polygon(50% 0, 100% 0, 55% 100%, 20% 100%);
+}
+
+.container .clip.clip3 {
+    background-image: url(/spacex-Ptd-iTdrCJM-unsplash.jpg);
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 55% 100%);
+}
+
+.container:hover .clip {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.container .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
