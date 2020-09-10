@@ -48,19 +48,19 @@ body {
 
 
 .container .clip.clip1 {
-    background-image: url(/atlas-kadrow-4m93a-sZsDs-unsplash.jpg);
+    background-color:blue;
     background-size: cover;
     clip-path: polygon(0 0, 50% 0, 20% 100%, 0% 100%);
 }
 
 .container .clip.clip2 {
-    background-image: url(/marc-zimmer-9SXgv3ydbs4-unsplash.jpg);
+    background-color:red;
     background-size: cover;
     clip-path: polygon(50% 0, 100% 0, 55% 100%, 20% 100%);
 }
 
 .container .clip.clip3 {
-    background-image: url(/spacex-Ptd-iTdrCJM-unsplash.jpg);
+    background-color:gold;
     background-size: cover;
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 55% 100%);
 }
